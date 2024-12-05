@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">
+                <span>Selling</span>
+                <span class="deliver-location">Deliver to <strong>Vietnam</strong></span>
+            </div>
+            <div class="search-bar">
+                <select class="category-dropdown">
+                    <option>All</option>
+                    <option>Books</option>
+                    <option>Electronics</option>
+                </select>
+                <input type="text" placeholder="Search Amazon">
+                <button class="search-btn">
+                    <img src="https://www.svgrepo.com/show/308964/search-look-inspect-magnifying-glass.svg" alt="Search">
+                </button>
+            </div>
+            <div class="user-options">
+                <span class="language">🇺🇸 EN</span>
+                <span class="account">Hello, sign in<br><strong>Account & Lists</strong></span>
+                <span class="returns">Returns<br><strong>& Orders</strong></span>
+                <span class="cart">🛒 Cart</span>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <ul class="menu">
+                <li class="tablinks all-courses active" onclick="openCity('all')">☰ All</li>
+                <li class="tablinks all-courses active" onclick="openCity('today')">Today's Deals</li>
+                <li class="tablinks learning-paths" onclick="openCity('customer')">Customer Service</li>
+                <li class="tablinks certifcations" onclick="openCity('registry')">Registry</li>
+                <li class="tablinks archived" onclick="openCity('gift')">Gift Cards</li>
+                <li class="tablinks learning-tools" onclick="openCity('sell-page')">Sell</li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- today -->
+ <section class="today js-body" id="today" >
+<section class="header-today1">
+    <p class="text-today">Today: Up to 50% off holiday gifts</p>
+   <div class="multiple-items">
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/41tLTJedlML._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 52% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">23</span> <span class="item-price">99</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$49.49</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/21Wxkg+v0QL._AC_SR400,600_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 20% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">12</span> <span class="item-price">00</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$49.49</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/31kqPQTMDkL._AC_SR400,600_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 20% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">24</span> <span class="item-price">99</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$49.49</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/31GzvXGnaPL._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 40% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">76</span> <span class="item-price">80</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$128.00</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/518JTsJX6kL._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 40% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">89</span> <span class="item-price">99</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$149.49</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/41UL2hjlfwL._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 25% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">22</span> <span class="item-price">49</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$29.97</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/41jQ3rYQGML._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 20% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">45</span> <span class="item-price">59</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$59.99</span>
+                </div>
+        </div>
+    </div>
+    <div class="once-product">
+        <img src="https://m.media-amazon.com/images/I/31Ai6gn-85L._SR480,440_.jpg" alt="">
+        <div class="text-product">
+           <span class="percent-sale"> 25% off</span> Cyber Monday Deal
+                <div class="cover-price">
+                    <div class="price"><span class="item-price">$</span> <span class="number">37</span> <span class="item-price">49</span></div>
+                    <span class="color-price">List: </span><span class="old-price color-price">$49.99</span>
+                </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="header-today2">
+    <div class="product-item">
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/02/IE23/trending_test_1.jpg" alt="">
+            Trending
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/DEB/2024/DealMoments/TodaysDealsBubbler_LD.jpg" alt="">
+            Ligthing deals
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/DEB/2024/DealMoments/TodaysDealsBubbler_CML.jpg" alt="">
+            Customers' Most-Loved
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/DiscoTec/2024/HOL/Browse/LP/TodaysDealPage/HOL24_4835_HS1_LP-DT_Today-Deal-Bubbler_Decor_500x500.jpg" alt="">
+            Holiday
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Fashion_white._CB468586683_.png" alt="">
+            Fashion
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Home_white._CB468586683_.png" alt="">
+            Home
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Toys_white._CB468586676_.png" alt="">
+            Toys & Games
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Beauty_white._CB468586681_.png" alt="">
+            Beauty
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Electronics_white._CB468586680_.png" alt="">
+            Electronics
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/01/goldbox/B07XKF5RM3.01.RMXXXXXX2.png" alt="">
+            Devices
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Kitchen_white._CB468586676_.png" alt="">
+            Kitchen
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/us-manual-merchandising/RBS-in-house-Graphics/Tide_500x500_V2.jpg" alt="">
+            Everyday Essentials
+        </div>
+        <div class="cover-productItem">
+            <img src="https://m.media-amazon.com/images/G/01/PrivateBrands/2023/APB-1181932_Bubbler_white_320x320.png" alt="">
+            Amazon Brands
+        </div>
+    </div>
+</section>
+
+<section class="body-today">
+    <section class="left-today">
+        <!-- department-today -->
+        <div class="department-today structure ">
+            <span style="font-weight: bold;">Departent</span>
+            <div class="choice-department">
+                <input type="radio" id="all" name="fav_language" class="radio">
+                <label for="all">All</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="accessories" name="fav_language" class="radio">
+                <label for="accessories">Amazon Devices & Accessories</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="arts" name="fav_language" class="radio">
+                <label for="arts">Arts, Crafts & Sewing</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="audible" name="fav_language" class="radio">
+                <label for="audible">Audible Books & Originals</label>
+            </div>
+            <div class="choice-in-seeMore department-today" style="display: none;" class="radio">
+                <div class="choice-department">
+                    <input type="radio" id="automoive" name="fav_language" class="radio">
+                    <label for="automotive">Automotive</label>
+                </div>
+                <div class="choice-department">
+                    <input type="radio" id="babyProducts" name="fav_language" class="radio">
+                    <label for="babyProducts">Baby Products</label>
+                </div>
+                <div class="choice-department">
+                    <input type="radio" id="beauty" name="fav_language" class="radio">
+                    <label for="beauty">Beauty & Personal Care</label>
+                </div>
+                <div class="choice-department">
+                    <input type="radio" id="books" name="fav_language" class="radio">
+                    <label for="books">Books</label>
+                </div>
+                <div class="choice-department">
+                    <input type="radio" id="cd" name="fav_language" class="radio">
+                    <label for="cd">CDs & Vinyl</label>
+                </div>
+            </div>
+            <button id="show-more" class="show-more"><img class="img-show" src="https://www.svgrepo.com/show/522521/down-2.svg" alt="">Show more</button>
+        </div>
+        <!-- customer-review -->
+        <div class="customer-review structure">
+            <span style="font-weight: bold;">Customer Review</span>
+            <div class="choice-department">
+                <input type="radio" id="all" name="fav_language" class="radio">
+                <label for="all">All</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="accessories" name="fav_language" class="radio">
+                <label for="accessories">Amazon Devices & Accessories</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="arts" name="fav_language" class="radio">
+                <label for="arts">Arts, Crafts & Sewing</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="audible" name="fav_language" class="radio">
+                <label for="audible">Audible Books & Originals</label>
+            </div>
+        </div>
+        <!-- price -->
+         <div class="price-today structure">
+            <span style="font-weight: bold;">Price</span>
+            <div class="choice-department">
+                <input type="radio" id="all" name="fav_language" class="radio">
+                <label for="all">All</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="under-25" name="fav_language" class="radio">
+                <label for="under-25">Under $25</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="under-50" name="fav_language" class="radio">
+                <label for="under-50">Under $50</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="under-100" name="fav_language" class="radio">
+                <label for="under-100">Under $100</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="under-200" name="fav_language" class="radio">
+                <label for="under-200">Under $200</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="above" name="fav_language" class="radio">
+                <label for="above">$200 & Above</label>
+            </div>
+         </div>
+
+         <!-- discount -->
+         <div class="discount-today structure">
+            <span style="font-weight: bold;">Discount</span>
+            <div class="choice-department">
+                <input type="radio" id="all" name="fav_language" class="radio">
+                <label for="all">All</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="10" name="fav_language" class="radio">
+                <label for="10">10% off or more</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="25" name="fav_language" class="radio">
+                <label for="25">25% off or more</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="50" name="fav_language" class="radio">
+                <label for="50">50% off or more</label>
+            </div>
+            <div class="choice-department">
+                <input type="radio" id="70" name="fav_language" class="radio">
+                <label for="70">70% off or more</label>
+            </div>
+            
+         </div>
+    </section>
+    <!-- right-today -->
+    <section class="right-today">
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_FMavif_SF339,339_QL58_.jpg?aicid=discounts-widgets-horizonte 1.5x," alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 27% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Breville BES870XL Espresso Machine, One Size, Brushed Stainless Steel
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/81DM+odkjhL._AC_SX575_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 30% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Under Armour Men's Charged Assert 10
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/81Dm65eja8L._AC_SX679_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 42% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Samsung Galaxy Watch 6 Classic 47mm Bluetooth Smartwatch, Rotating Bezel, Fitness Tracker, Personalized HR Zones, Advanced Sleep Coaching, Heart Monitor, BIA Sensor, Health Insights, US Version, Black
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/61d46oYQgdL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 32% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Samsung Galaxy Tab A9+ Tablet 11” 64GB Android Tablet, Big Screen, Quad Speakers, Upgraded Chipset, Multi Window Display, Slim, Light, Durable Design, US Version, 2024, Graphite
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/71xuRWKBUjL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 38% off</span> Limited time deal</div>
+                <div class="name-product">
+                    imarku Knife Set, Knife Sets for Kitchen with Block 16 PCS High Carbon Stainless Steel Kitchen Knife Set with Sharpener, Razor-Sharp Kitchen Knives, Dishwasher Safe, Christmas Gifts for Men & Woman
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/61sgyxdz2IL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 44% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Lenovo Tab M8 Gen 4-2024 - Family Tablet - Google Kids Space - 8" HD Touch Display - 2 GB Memory - 32 GB Storage - MediaTek Helio A22 - Arctic Grey - Folio with Stand
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/6119DU0cYfL._AC_SX679_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 20% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Breville the Barista Touch Espresso Machine with Grinder & Auto Milk Frother, Espresso Maker with Touchscreen & Seconds Heat Up, Cappuccino & Latte Machine for Home, BES880BTR, Black Truffle
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/61HDVI-rPzL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 40% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Philips Sonicare 4100 Power Toothbrush, Rechargeable Electric Toothbrush with Pressure Sensor, Black
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/71WcjsOVOmL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 25% off</span> Limited time deal</div>
+                <div class="name-product">
+                    Samsung Galaxy S24 Ultra Cell Phone, 512GB AI Smartphone, Unlocked Android, 200MP, 100x Zoom Cameras, Fast Processor, Long Battery Life, Edge-to-Edge Display, S Pen, US Version, 2024, Titanium Black
+                </div>
+            </div>
+        </div>
+        <div class="body-product">
+            <img src="https://m.media-amazon.com/images/I/51IxtP5Y51L.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="" class="img-body">
+            <div class="text-product-body">
+                <div class="sale"><span class="percent-sale"> 44% off</span> Limited time deal</div>
+                <div class="name-product">
+                    WYZE Cam v4, 2.5K HD WiFi Smart Home Security Camera, Indoor/Outdoor, Pet/Baby Monitor, Motion Activated Spotlight/Siren, Color Night Vision, 2-Way Audio, Works with Alexa & Google, Wired, White
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</section>
+</section>
+
+
+<!-- registry -->
+ <section id="registry" style="display: none;">
+    <header class="header-registry" id="header-registry">
+    
+        <h1>registry & gifting</h1>
+        <nav>
+          <div class="dropdown">
+            <a href="#">Find a registry or gift list &#9662;</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Wedding Registry</a></li>
+              <li><a href="#">Baby Registry</a></li>
+              <li><a href="#">Gift List</a></li>
+            </ul>
+          </div>
+                <a href="#" class="next-text">Create a registry or gift list</a>
+                <a href="#" class="next-text">Help</a> 
+        </nav>
+
+      </header>
+    
+      <div class="container-registry">
+        <div class="main-section">
+          <div class="highlight">
+            <h2>Gifts for life's biggest moments</h2>
+            <p>For weddings, babies, birthdays, or any life event, registries and gift lists ensure the perfect gift.</p>
+            <button>Find a registry</button>
+            <button>Create</button>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/AdobeStock_237143437_crop.jpeg" alt="Baby Registry">
+            <h3>Baby Registry</h3>
+            <p>Get help preparing for your new arrival.</p>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/AWR/Images/SUM24_AWR_Homepage_11_1200x900.jpg" alt="Wedding Registry">
+            <h3>Wedding Registry</h3>
+            <p>Register for gifts to start your new chapter.</p>
+          </div>
+          <div>
+            <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/AdobeStock_285034732_ggr_crop.jpeg" alt="Gift List">
+            <h3>Gift List</h3>
+            <p>Share gift ideas or needs for birthdays, holidays, graduations, new homes and more.</p>
+          </div>
+        </div>
+    
+        <div class="reasons">
+          <h2>Reasons to register with Amazon</h2>
+          <div class="reasons-grid">
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/weddingregistry/images/icon-highlights/icon_selection.png" alt="Earth's biggest selection">
+              <h3 class="text-style">Earth's biggest selection</h3>
+              <p>Add items from Amazon to create a gift registry for any occasion.</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/weddingregistry/images/icon-highlights/icon_share.png" alt="Easy to share">
+              <h3 class="text-style">Easy to share</h3>
+              <p>Share your gift registry with friends and family so they'll know exactly what gifts to get.</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/weddingregistry/images/icon-highlights/icon_returns.png" alt="Extended returns">
+              <h3 class="text-style">Extended returns</h3>
+              <p>Not quite right? Registry gifts have an extended return period.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="categories-section">
+          <h2>Create a registry or gift list</h2>
+          <div class="categories-grid">
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/baby_356_200.jpg" alt="Baby">
+              <h3>Baby</h3>
+              <p>Essentials to support your growing family</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/wedding_650_300.jpg" alt="Wedding">
+              <h3>Wedding</h3>
+              <p>Everything you need for a life together</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/birthday_356_200.jpg" alt="Birthday">
+              <h3>Birthday</h3>
+              <p>Celebrate another year around the sun</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/holiday_356_200.jpg" alt="Holiday">
+              <h3>Holiday</h3>
+              <p>Share gift ideas with family and friends</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/housewarming_356_200.jpg" alt="Housewarming">
+              <h3>Housewarming</h3>
+              <p>Furnish your new home</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/graduation_356_200.jpg" alt="Graduation">
+              <h3>Graduation</h3>
+              <p>Prepare for your next chapter</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/pet_356_200.jpg" alt="Pet">
+              <h3>Pet</h3>
+              <p>For your pet's special day</p>
+            </div>
+            <div>
+              <img src="https://m.media-amazon.com/images/G/01/img18/home/GL/custom_356_200.jpg" alt="Other Occasions">
+              <h3>Other Occasions</h3>
+              <p>Customize your Gift List for any occasion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ </section>
+
+<!-- sell -->
+<section class="sell js-body" id="sell-page" style="display: none;">
+    <div class="header-sell">
+        <div class="header-sell-left">
+            <p class="header-sell-text">Sell with Amazon</p>
+            <p class="promo">Get <strong>10% back</strong> on your first <strong>$50,000</strong> in branded sales. <a href="#">Learn more</a></p>
+        </div>
+        <div class="header-sell-right">
+            <button class="signup-button">Sign up*</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="signup-section">
+            <div class="text-content">
+                <h1>Create an Amazon seller account</h1>
+                <p class="offer">Get <strong>10% back</strong> on your first <strong>$50,000</strong> in branded sales</p>
+                <button class="signup-button-large">Sign up*</button>
+            </div>
+            <div class="image-content">
+                    <img src="https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/illustration/LoFi/CN2NA_lofi.webp" alt="Product 1">
+            </div>
+        </div>
+        <div class="statistics-section">
+            <p class="statistics">More than <strong>70%</strong> of Amazon sellers generate their <strong>first sale</strong> in less than <strong>60 days</strong>.</p>
+        </div>
+    </div>
+
+
+
+    <div class="incentives-section">
+        <div class="container">
+            <div class="footer">
+                <h1>Get started with $50,000 in incentives</h1>
+                <p>Ready to sell with Amazon? As a new seller, you can take advantage of a series of incentives.</p>
+            </div>
+            <div class="content">
+                <img src="https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/illustration/LoFi/collection/HL-NSI-02-Tall.webp" alt="Seller Imge">
+                <div class="text">
+                    <h2>Incentives Include:</h2>
+                    <ul>
+                        <li>10% back on your first $50,000 in branded sales, then 5% back through your first year until you reach $1,000,000</li>
+                        <li>$100 off shipments into the Amazon fulfillment network using the Amazon Partnered Carrier program</li>
+                        <li>Free storage and customer returns with auto-enrollment in the FBA New Selection program</li>
+                        <li>$50 credit to create Sponsored Products or Sponsored Brands ads</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+<!-- footer -->
+ <section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Selling</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Selling Devices</a></li>
+                    <li><a href="#">Selling Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell products on Selling</a></li>
+                    <li><a href="#">Sell on Selling Business</a></li>
+                    <li><a href="#">Sell apps on Selling</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                    <li><a href="#">Host an Selling Hub</a></li>
+                    <li><a href="#">See More Make Money with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Selling Payment Products</h4>
+                <ul>
+                    <li><a href="#">Selling Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Selling Currency Converter</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#">Selliing and COVID-19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates & Policies</a></li>
+                    <li><a href="#">Returns & Replacements</a></li>
+                    <li><a href="#">Manage Your Content and Devices</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                
+            </div>
+            <div>
+                <span>HCI - 2024</span> | <span>Group4</span>
+            </div>
+        </div>
+    </div>
+ </section>
+<script>
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 0) {
+    document.getElementById("header-registry").style.top = "0";
+  } else {
+    document.getElementById("header-registry").style.top = "unset";
+  }
+}
+function openCity(cityName) {
+var i;
+    var x = document.getElementsByClassName("js-body");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    
+    document.getElementById(cityName).style.display = "block";
+
+}
+    // today
+    $(document).ready(function() {
+        $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  gap: 20,
+  prevArrow:"<button type='button' class='slick-prev pull-left'><img src='https://www.svgrepo.com/show/510039/left-chevron.svg' alt=''> </button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><img src='https://www.svgrepo.com/show/510166/right-chevron.svg' alt=''></i></button>",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+$('.product-item').slick({
+  infinite: true,
+  slidesToShow: 10,
+  slidesToScroll: 1,
+  gap: 20,
+  prevArrow:"<button type='button' class='prev pull-left'><img src='https://www.svgrepo.com/show/510039/left-chevron.svg' alt=''> </button>",
+  nextArrow:"<button type='button' class='next pull-right'><img src='https://www.svgrepo.com/show/510166/right-chevron.svg' alt=''></i></button>",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 7,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+$("#show-more").click(function(){
+  $(".choice-in-seeMore").toggle();
+  if( $(".choice-in-seeMore").css('display')== 'none'){
+    $("#show-more").html( '<img class="img-show show-more" src="https://www.svgrepo.com/show/522521/down-2.svg" alt="">Show more')
+  }else {
+    $("#show-more").html( '<img class="img-show show-more" src="https://www.svgrepo.com/show/522687/up-2.svg" alt="">Show less')
+  }
+});
+$("#all").prop("checked", true);
+});
+
+</script>
+</body>
+</html>
+
