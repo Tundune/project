@@ -41,7 +41,7 @@
                 <li class="tablinks all-courses active" onclick="openCity('today')">Today's Deals</li>
                 <li class="tablinks learning-paths" onclick="openCity('customer')">Customer Service</li>
                 <li class="tablinks certifcations" onclick="openCity('registry')">Registry</li>
-                <li class="tablinks archived" onclick="openCity('gift')">Gift Cards</li>
+                <li class="tablinks archived" onclick="openCity('gift-cards')">Gift Cards</li>
                 <li class="tablinks learning-tools" onclick="openCity('sell-page')">Sell</li>
             </ul>
         </nav>
@@ -213,7 +213,7 @@
                 <input type="radio" id="audible" name="fav_language" class="radio">
                 <label for="audible">Audible Books & Originals</label>
             </div>
-            <div class="choice-in-seeMore department-today" style="display: none;" class="radio">
+            <div class="choice-in-seeMore department-today" style=" display: none;" class="radio">
                 <div class="choice-department">
                     <input type="radio" id="automoive" name="fav_language" class="radio">
                     <label for="automotive">Automotive</label>
@@ -408,12 +408,88 @@
     </section>
 </section>
 </section>
-
+<!-- customer -->
+<section  id="customer" class="js-body" style="display: none;">
+    <div class="heading-cts">
+        <a href="#">Customer Service</a>
+        <a href="#">Home</a>
+        <a href="#">Digital Services and Device Support</a>
+    </div>
+    <div class="container-cts">
+        <h1>Welcome to Selling Customer Service</h1>
+        <p>What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+        <div class="button-cts">
+            <a href="#">
+                <img src="./Source/Image/box.png" alt="Box Icon" width="25"> A delivery, order or return
+            </a>
+            <a href="#">
+                <img src="./Source/Image/prime.png" alt="Prime Icon" width="25"> Prime
+            </a>
+            <a href="#">
+                <img src="./Source/Image/atm-card.png" alt="Card Icon" width="25"> Payment, charges or gift cards
+            </a>
+            <a href="#">
+                <img src="./Source/Image/cyber-security.png" alt="Address Icon" width="25"> Address, security & privacy
+            </a>
+            <a href="#">
+                <img src="./Source/Image/questions.png" alt="Other Icon" width="25"> Something else
+            </a>
+            <a href="#">
+                <img src="./Source/Image/enter.png" alt="Login Icon" width="25"> Login & password
+            </a>
+            <a href="#">
+                <img src="./Source/Image/report.png" alt="Report Icon" width="25"> Report
+            </a>
+        </div>
+    </div>
+    <div class="container-cts">
+        <h2>Search our help library</h2>
+        <div class="search-bar2">
+            <input type="text" placeholder="Type something like, 'question about a charge'">
+        </div>
+        <div class="container-customer" style="display: flex;">
+            <div class="sidebar">
+                <h2>All help topics </h2>
+                <ul>
+                    <li><button class="menu-button active" data-topic="topic1">Where's my stuff</button></li>
+                    <li><button class="menu-button" data-topic="topic2">Shipping and Delivery</button></li>
+                    <li><button class="menu-button" data-topic="topic3">Returns and Refunds</button></li>
+                    <li><button class="menu-button" data-topic="topic4">Managing Your Account</button></li>
+                    <li><button class="menu-button" data-topic="topic5">Security & Privacy</button></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="topic1" class="help-topics">
+                    <div class="help-topic">Carrier Contact Information <span>Find the contact information of your delivery carriers.</span></div>
+                    <div class="help-topic">Find a missing package <span>Actions to take when your order shows as "delivered."</span></div>
+                    <div class="help-topic">Track your package <span>Track your packages in Your Orders.</span></div>
+                    <div class="help-topic">Undeliverable Packages <span>Learn what to do when your package cannot be delivered.</span></div>
+                </div>
+                <div id="topic2" class="help-topics" style="display: none;">
+                    <div class="help-topic">Shipping Rates <span>Learn about available shipping rates and times.</span></div>
+                    <div class="help-topic">Delivery Issues <span>Fix common delivery problems.</span></div>
+                    <div class="help-topic">Late Deliveries <span>Understand why deliveries may be late.</span></div>
+                </div>
+                <div id="topic3" class="help-topics" style="display: none;">
+                    <div class="help-topic">Start a Return <span>Learn how to return items you ordered.</span></div>
+                    <div class="help-topic">Refund Timelines <span>Understand when you can expect your refund.</span></div>
+                </div>
+                <div id="topic4" class="help-topics" style="display: none;">
+                    <div class="help-topic">Update Account Info <span>Manage your personal details and preferences.</span></div>
+                    <div class="help-topic">Close Your Account <span>Learn how to deactivate your account.</span></div>
+                </div>
+                <div id="topic5" class="help-topics" style="display: none;">
+                    <div class="help-topic">Privacy Settings <span>Learn about your privacy controls.</span></div>
+                    <div class="help-topic">Report Suspicious Emails <span>Identify and report phishing attempts.</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- registry -->
- <section id="registry" style="display: none;">
+ <section id="registry" class="js-body" style="display: none;">
     <header class="header-registry" id="header-registry">
-    
         <h1>registry & gifting</h1>
         <nav>
           <div class="dropdown">
@@ -555,7 +631,7 @@
 
     <div class="incentives-section">
         <div class="container">
-            <div class="footer">
+            <div class="footer-sell">
                 <h1>Get started with $50,000 in incentives</h1>
                 <p>Ready to sell with Amazon? As a new seller, you can take advantage of a series of incentives.</p>
             </div>
@@ -574,8 +650,75 @@
         </div>
     </div>
 </section>
-    
+<!-- gift-cards -->
+<section class="js-body" id="gift-cards" style="display: none;">
+    <div class="dautien">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://m.media-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2547/VX-2547_GCLP_Hero-Desktop-1_3000x600._SX3000_QL85_.jpg" alt="Ảnh 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://m.media-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2547/VX-2547_BGCLP_Hero-Desktop-1_3000x600._SX3000_QL85_.jpg" alt="Ảnh 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://m.media-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2547/VX-2547_BGCLP_Hero-Desktop-2_3000x600._SX3000_QL85_.jpg" alt="Ảnh 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://m.media-amazon.com/images/G/01/GiftCards/2024/Q1/VX-2421/Desktop_GCLP_Hero_3400x680_EN._SX3000_QL85_.jpg" alt="Ảnh 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://m.media-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2596/VX-2596_LP_HeroBanner_3400x680_EN._SX3000_QL85_.jpg" alt="Ảnh 5">
+            </div>
+        </div>
+        
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <div class="navbar">
+        <img src="https://m.media-amazon.com/images/G/01/GiftCards/GCLP/LOGO_GC_space.png" alt="Logo Gift Cards">
+        <a href="#">Selling Gift Cards</a>
+        <a href="#">Specialty Gift Cards</a>
+        <a href="#">Redeem Selling Gift Cards</a>
+        <a href="#">Vary your balance</a>
+        <a href="#">Selling Reloaded</a>
+    </div>
+    <div class="image">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/Browse/LP/Stripe/HOL24_ADHOC_1274_HS1_LP-DT-Reciprocal-Stripe-Banner_Deals_1500x50._CB1727733421_.jpg" alt="">
+    </div>
 
+    <div class="container">
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2562/VX-2562_GCLP-Shop-Amazon-Gift_Card_EN.jpg" alt="Amazon Gift Cards">
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2562/VX-2562_GCLP-Browse-Specialty-Gift-Cards_Instaccart-Uber_EN.jpg" alt="Specialty Gift Cards">
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2562/VX-2562_GCLP-Amazon-Reload_EN.jpg" alt="Amazon Reload">
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/2024/Q4/VX-2635/VX-2635_GCLP-Multipacks_EN._CB1198675309_.jpg" alt="Multipack Gift Cards">
+        </div>
+    </div>
+        <div class="container">
+            <div class="button">
+                <div class="item large-items">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/GCLP/D_tile_3c_1_redeem.jpg" alt="Redeem Amazon Gift Cards">
+                </div>
+                <div class="item large-items">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/GCLP/D_tile_3c_1_redeem.jpg" alt="View your balance">
+                </div>
+                <div class="item large-items">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/GCLP/D_tile_3c_3_autoreload.jpg" alt="Set up Auto-Reload">
+                </div>
+            </div>
+        </div>
+</section>
 
 
 <!-- footer -->
@@ -648,6 +791,7 @@ function myFunction() {
     document.getElementById("header-registry").style.top = "unset";
   }
 }
+
 function openCity(cityName) {
 var i;
     var x = document.getElementsByClassName("js-body");
@@ -656,8 +800,9 @@ var i;
     }
     
     document.getElementById(cityName).style.display = "block";
-
+    
 }
+
     // today
     $(document).ready(function() {
         $('.multiple-items').slick({
@@ -732,7 +877,43 @@ $("#show-more").click(function(){
 });
 $("#all").prop("checked", true);
 });
+const buttons = document.querySelectorAll('.menu-button');
+        const topics = document.querySelectorAll('.help-topics');
 
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const topicId = button.getAttribute('data-topic');
+                topics.forEach(topic => {
+                    topic.style.display = topic.id === topicId ? 'grid' : 'none';
+                });
+            });
+        });
+
+        let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex - 1].style.display = "block";  
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Thay đổi ảnh mỗi 3 giây
+            }
+        
+            function currentSlide(n) {
+                slideIndex = n - 1; // Chuyển đổi để phù hợp với chỉ số mảng
+                showSlides();
+            }
 </script>
 </body>
 </html>
